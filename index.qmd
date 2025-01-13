@@ -1,0 +1,33 @@
+---
+title: "Complemento al curso Introducción al software estadístico R: Jamovi"
+author: "Emilio L. Cano"
+format: html
+toc: true
+---
+
+## Alcance
+
+Este documento contiene material complementario al curso "Introducción al software estadístico R" que imparto en distintas instituciones.
+
+Jamovi es una plataforma estadística abierta, 
+
+## Instalación de Jamovi. Módulos
+
+
+
+## Ver y ejecutar código R en Jamovi
+
+
+## Importación y transformación de datos con Jamovi
+
+## Exploración de datos con Jamovi
+
+## Análisis de atributos con Jamovi 
+
+## Regresión con Jamovi
+
+## Prueba t y ANOVA con Jamovi
+
+## El modelo de fórmulas de R
+
+
