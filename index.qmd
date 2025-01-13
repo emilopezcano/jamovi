@@ -1,33 +1,96 @@
 ---
 title: "Complemento al curso Introducción al software estadístico R: Jamovi"
 author: "Emilio L. Cano"
+date: 2025-01-14
 format: html
 toc: true
+lang: es-ES
 ---
 
 ## Alcance
 
-Este documento contiene material complementario al curso "Introducción al software estadístico R" que imparto en distintas instituciones.
+Este documento contiene material complementario al curso [Introducción al software estadístico R](https://www.lcano.com/b/iser/slides_elcano/) que imparto en distintas instituciones.
 
-Jamovi es una plataforma estadística abierta, 
+[Jamovi](https://www.jamovi.org/features.html) es una plataforma estadística abierta, que utiliza el software estadístico y lenguaje de programación R para ejecutar los análisis estadísticos. Es un software gratuito aunque con algunas limitaciones. Existen planes para superar esas limitaciones.
+
+Se puede utilizar en la nube o como aplicación de escritorio, y existe documentación disponible de buena calidad, entre la que destacan:
+
+1.  Libro [learning statistics with jamovi](https://davidfoxcroft.github.io/lsj-book/)
+
+2.  [Documentación oficial](https://jamovi.readthedocs.io/es/latest/). Algunas páginas traducidas al español.
+
+3.  [Curso gratuito en datalab.cc](https://datalab.cc/jamovi/)
 
 ## Instalación de Jamovi. Módulos
 
+### Jamovi Cloud
 
+Solo hace falta tener una cuenta en Jamovi, que se puede vincular a una cuenta de Google. Iniciar sesión en <https://www.jamovi.org/cloud.html>
+
+### Jamovi Desktop
+
+1.  Ir a la página de descargas <https://www.jamovi.org/download.html>
+
+2.  Descargar el archivo para Windows o para MacOS (o seguir instrucciones para Linux)
+
+3.  Instalar de la forma habitual
+
+### Jamovi modules
+
+Jamovi contiene una funcionalida básica por defecto. Pero también tiene un sistema de extensiones, similar a los paquetes de R que la comunidad comparte, y que extiende la funcionalidad.
+
+1.  Haz clic en el icono "Módulos"
+
+2.  Ve a la **Biblioteca jamovi**
+
+3.  Explora los módulos
+
+4.  Prueba alguno (por ejemplo, distrACTION)
+
+### Estructura de la apliación
+
+-   Menú superior
+
+-   Menús de datos, análisis e informe
+
+-   Opciones menú derecho
+
+## Ver y ejecutar código Jamovi en R
+
+-   Documentación: [Jamovi and R](https://jamovi.readthedocs.io/pt/latest/usermanual/um_6_jamovi_and_R.html)
+
+-   Activar Syntax mode en las opciones
+
+-   Instalar paquetes necesarios
+
+-   Usar el código de Jamovi en R
+
+```{r}
+
+library(jmv)
+jmv::descriptives(data = iris)
+```
 
 ## Ver y ejecutar código R en Jamovi
 
+Para ejecutar código R en Jamovi, debemos instalar el módulo Rj Editor. Se crea un icono en el menú de Análisis, que abre un editor que funciona como la consola de R. Podemos así añadir nuestros propios análisis con paquetes que no estén disponibles en Jamovi.
+
+:::{.callout-warning}
+
+## Cuidado
+
+En la versión cloud no se puede instalar este módulo con el plan gratuito.
+
+:::
 
 ## Importación y transformación de datos con Jamovi
 
 ## Exploración de datos con Jamovi
 
-## Análisis de atributos con Jamovi 
+## Análisis de atributos con Jamovi
 
 ## Regresión con Jamovi
 
 ## Prueba t y ANOVA con Jamovi
 
 ## El modelo de fórmulas de R
-
-

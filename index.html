@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es-ES" xml:lang="es-ES"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.5.55">
+<meta name="generator" content="quarto-1.6.40">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -21,6 +21,40 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
@@ -30,10 +64,10 @@ ul.task-list li input[type="checkbox"] {
 <script src="index_files/libs/quarto-html/tippy.umd.min.js"></script>
 <script src="index_files/libs/quarto-html/anchor.min.js"></script>
 <link href="index_files/libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="index_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="index_files/libs/quarto-html/quarto-syntax-highlighting-549806ee2085284f45b00abea8c6df48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="index_files/libs/bootstrap/bootstrap.min.js"></script>
 <link href="index_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="index_files/libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<link href="index_files/libs/bootstrap/bootstrap-973236bd072d72a04ee9cd82dcc9cb29.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 
 
 </head>
@@ -43,11 +77,18 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
 <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
   <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">Table of contents</h2>
+    <h2 id="toc-title">Tabla de contenidos</h2>
    
   <ul>
   <li><a href="#alcance" id="toc-alcance" class="nav-link active" data-scroll-target="#alcance">Alcance</a></li>
-  <li><a href="#instalación-de-jamovi.-módulos" id="toc-instalación-de-jamovi.-módulos" class="nav-link" data-scroll-target="#instalación-de-jamovi.-módulos">Instalación de Jamovi. Módulos</a></li>
+  <li><a href="#instalación-de-jamovi.-módulos" id="toc-instalación-de-jamovi.-módulos" class="nav-link" data-scroll-target="#instalación-de-jamovi.-módulos">Instalación de Jamovi. Módulos</a>
+  <ul class="collapse">
+  <li><a href="#jamovi-cloud" id="toc-jamovi-cloud" class="nav-link" data-scroll-target="#jamovi-cloud">Jamovi Cloud</a></li>
+  <li><a href="#jamovi-desktop" id="toc-jamovi-desktop" class="nav-link" data-scroll-target="#jamovi-desktop">Jamovi Desktop</a></li>
+  <li><a href="#jamovi-modules" id="toc-jamovi-modules" class="nav-link" data-scroll-target="#jamovi-modules">Jamovi modules</a></li>
+  <li><a href="#estructura-de-la-apliación" id="toc-estructura-de-la-apliación" class="nav-link" data-scroll-target="#estructura-de-la-apliación">Estructura de la apliación</a></li>
+  </ul></li>
+  <li><a href="#ver-y-ejecutar-código-jamovi-en-r" id="toc-ver-y-ejecutar-código-jamovi-en-r" class="nav-link" data-scroll-target="#ver-y-ejecutar-código-jamovi-en-r">Ver y ejecutar código Jamovi en R</a></li>
   <li><a href="#ver-y-ejecutar-código-r-en-jamovi" id="toc-ver-y-ejecutar-código-r-en-jamovi" class="nav-link" data-scroll-target="#ver-y-ejecutar-código-r-en-jamovi">Ver y ejecutar código R en Jamovi</a></li>
   <li><a href="#importación-y-transformación-de-datos-con-jamovi" id="toc-importación-y-transformación-de-datos-con-jamovi" class="nav-link" data-scroll-target="#importación-y-transformación-de-datos-con-jamovi">Importación y transformación de datos con Jamovi</a></li>
   <li><a href="#exploración-de-datos-con-jamovi" id="toc-exploración-de-datos-con-jamovi" class="nav-link" data-scroll-target="#exploración-de-datos-con-jamovi">Exploración de datos con Jamovi</a></li>
@@ -70,12 +111,18 @@ ul.task-list li input[type="checkbox"] {
 <div class="quarto-title-meta">
 
     <div>
-    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-heading">Autor/a</div>
     <div class="quarto-title-meta-contents">
              <p>Emilio L. Cano </p>
           </div>
   </div>
     
+    <div>
+    <div class="quarto-title-meta-heading">Fecha de publicación</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">14 de enero de 2025</p>
+    </div>
+  </div>
   
     
   </div>
@@ -87,14 +134,94 @@ ul.task-list li input[type="checkbox"] {
 
 <section id="alcance" class="level2">
 <h2 class="anchored" data-anchor-id="alcance">Alcance</h2>
-<p>Este documento contiene material complementario al curso “Introducción al software estadístico R” que imparto en distintas instituciones.</p>
-<p>Jamovi es una plataforma estadística abierta,</p>
+<p>Este documento contiene material complementario al curso <a href="https://www.lcano.com/b/iser/slides_elcano/">Introducción al software estadístico R</a> que imparto en distintas instituciones.</p>
+<p><a href="https://www.jamovi.org/features.html">Jamovi</a> es una plataforma estadística abierta, que utiliza el software estadístico y lenguaje de programación R para ejecutar los análisis estadísticos. Es un software gratuito aunque con algunas limitaciones. Existen planes para superar esas limitaciones.</p>
+<p>Se puede utilizar en la nube o como aplicación de escritorio, y existe documentación disponible de buena calidad, entre la que destacan:</p>
+<ol type="1">
+<li><p>Libro <a href="https://davidfoxcroft.github.io/lsj-book/">learning statistics with jamovi</a></p></li>
+<li><p><a href="https://jamovi.readthedocs.io/es/latest/">Documentación oficial</a>. Algunas páginas traducidas al español.</p></li>
+<li><p><a href="https://datalab.cc/jamovi/">Curso gratuito en datalab.cc</a></p></li>
+</ol>
 </section>
 <section id="instalación-de-jamovi.-módulos" class="level2">
 <h2 class="anchored" data-anchor-id="instalación-de-jamovi.-módulos">Instalación de Jamovi. Módulos</h2>
+<section id="jamovi-cloud" class="level3">
+<h3 class="anchored" data-anchor-id="jamovi-cloud">Jamovi Cloud</h3>
+<p>Solo hace falta tener una cuenta en Jamovi, que se puede vincular a una cuenta de Google. Iniciar sesión en <a href="https://www.jamovi.org/cloud.html" class="uri">https://www.jamovi.org/cloud.html</a></p>
+</section>
+<section id="jamovi-desktop" class="level3">
+<h3 class="anchored" data-anchor-id="jamovi-desktop">Jamovi Desktop</h3>
+<ol type="1">
+<li><p>Ir a la página de descargas <a href="https://www.jamovi.org/download.html" class="uri">https://www.jamovi.org/download.html</a></p></li>
+<li><p>Descargar el archivo para Windows o para MacOS (o seguir instrucciones para Linux)</p></li>
+<li><p>Instalar de la forma habitual</p></li>
+</ol>
+</section>
+<section id="jamovi-modules" class="level3">
+<h3 class="anchored" data-anchor-id="jamovi-modules">Jamovi modules</h3>
+<p>Jamovi contiene una funcionalida básica por defecto. Pero también tiene un sistema de extensiones, similar a los paquetes de R que la comunidad comparte, y que extiende la funcionalidad.</p>
+<ol type="1">
+<li><p>Haz clic en el icono “Módulos”</p></li>
+<li><p>Ve a la <strong>Biblioteca jamovi</strong></p></li>
+<li><p>Explora los módulos</p></li>
+<li><p>Prueba alguno (por ejemplo, distrACTION)</p></li>
+</ol>
+</section>
+<section id="estructura-de-la-apliación" class="level3">
+<h3 class="anchored" data-anchor-id="estructura-de-la-apliación">Estructura de la apliación</h3>
+<ul>
+<li><p>Menú superior</p></li>
+<li><p>Menús de datos, análisis e informe</p></li>
+<li><p>Opciones menú derecho</p></li>
+</ul>
+</section>
+</section>
+<section id="ver-y-ejecutar-código-jamovi-en-r" class="level2">
+<h2 class="anchored" data-anchor-id="ver-y-ejecutar-código-jamovi-en-r">Ver y ejecutar código Jamovi en R</h2>
+<ul>
+<li><p>Documentación: <a href="https://jamovi.readthedocs.io/pt/latest/usermanual/um_6_jamovi_and_R.html">Jamovi and R</a></p></li>
+<li><p>Activar Syntax mode en las opciones</p></li>
+<li><p>Instalar paquetes necesarios</p></li>
+<li><p>Usar el código de Jamovi en R</p></li>
+</ul>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(jmv)</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>jmv<span class="sc">::</span><span class="fu">descriptives</span>(<span class="at">data =</span> iris)</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+ DESCRIPTIVES
+
+ Descriptives                                                                                    
+ ─────────────────────────────────────────────────────────────────────────────────────────────── 
+                         Sepal.Length    Sepal.Width    Petal.Length    Petal.Width    Species   
+ ─────────────────────────────────────────────────────────────────────────────────────────────── 
+   N                              150            150             150            150        150   
+   Missing                          0              0               0              0          0   
+   Mean                      5.843333       3.057333        3.758000       1.199333              
+   Median                    5.800000       3.000000        4.350000       1.300000              
+   Standard deviation       0.8280661      0.4358663        1.765298      0.7622377              
+   Minimum                   4.300000       2.000000        1.000000      0.1000000              
+   Maximum                   7.900000       4.400000        6.900000       2.500000              
+ ─────────────────────────────────────────────────────────────────────────────────────────────── </code></pre>
+</div>
+</div>
 </section>
 <section id="ver-y-ejecutar-código-r-en-jamovi" class="level2">
 <h2 class="anchored" data-anchor-id="ver-y-ejecutar-código-r-en-jamovi">Ver y ejecutar código R en Jamovi</h2>
+<p>Para ejecutar código R en Jamovi, debemos instalar el módulo Rj Editor. Se crea un icono en el menú de Análisis, que abre un editor que funciona como la consola de R. Podemos así añadir nuestros propios análisis con paquetes que no estén disponibles en Jamovi.</p>
+<div class="callout callout-style-default callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Cuidado
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>En la versión cloud no se puede instalar este módulo con el plan gratuito.</p>
+</div>
+</div>
 </section>
 <section id="importación-y-transformación-de-datos-con-jamovi" class="level2">
 <h2 class="anchored" data-anchor-id="importación-y-transformación-de-datos-con-jamovi">Importación y transformación de datos con Jamovi</h2>
@@ -160,12 +287,12 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     // flash "checked"
     button.classList.add('code-copy-button-checked');
     var currentTitle = button.getAttribute("title");
-    button.setAttribute("title", "Copied!");
+    button.setAttribute("title", "Copiado");
     let tooltip;
     if (window.bootstrap) {
       button.setAttribute("data-bs-toggle", "tooltip");
       button.setAttribute("data-bs-placement", "left");
-      button.setAttribute("data-bs-title", "Copied!");
+      button.setAttribute("data-bs-title", "Copiado");
       tooltip = new bootstrap.Tooltip(button, 
         { trigger: "manual", 
           customClass: "code-copy-button-tooltip",
@@ -199,8 +326,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   });
   clipboard.on('success', onCopySuccess);
   if (window.document.getElementById('quarto-embedded-source-code-modal')) {
-    // For code content inside modals, clipBoardJS needs to be initialized with a container option
-    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
     const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
       text: getTextToCopy,
       container: window.document.getElementById('quarto-embedded-source-code-modal')
@@ -311,7 +436,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       if (window.Quarto?.typesetMath) {
         window.Quarto.typesetMath(note);
       }
-      // TODO in 1.5, we should make sure this works without a callout special case
       if (note.classList.contains("callout")) {
         return note.outerHTML;
       } else {
