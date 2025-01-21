@@ -85,6 +85,24 @@ En la versión cloud no se puede instalar este módulo con el plan gratuito.
 
 ## Importación y transformación de datos con Jamovi
 
+Jamovi detecta automáticamente archivos de datos de diversos tipos (excel, rds, csv, ...). Para abrir un archivo de datos, vamos al menú principal arriba a la izquierda y seleccionamos "Abrir". Navegamos hasta la carpeta donde está el archivo de datos y seleccionamos el archivo de datos.
+
+El menú Importar especial permite seleccionar el tipo de archivo.
+
+En el menú Exportar podemos exportar nuestro archivo a los formatos más populares, incluido excel y R.
+
+:::{.callout-warning}
+Jamovi solo trabaja con un conjunto de datos cada vez, por lo que si queremos consolidar varios archivos en uno, lo tendremos que hacer con código R u otro software.
+:::
+
+Para transformar los datos cargados en Jamovi, utilizamos el menú Variables.
+
+* Botón Editar: Para modificar la columna seleccionada
+* Botón Calcular: Para añadir variables calculadas
+* Botón Transformar: Para recodificar una variable
+* Botón Filtros: Para filtrar por variable
+* Botones Agregar y Eliminar: Para agregar y eliminar columnas
+
 ## Exploración de datos con Jamovi
 
 ## Análisis de atributos con Jamovi
