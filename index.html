@@ -91,7 +91,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li><a href="#ver-y-ejecutar-código-jamovi-en-r" id="toc-ver-y-ejecutar-código-jamovi-en-r" class="nav-link" data-scroll-target="#ver-y-ejecutar-código-jamovi-en-r">Ver y ejecutar código Jamovi en R</a></li>
   <li><a href="#ver-y-ejecutar-código-r-en-jamovi" id="toc-ver-y-ejecutar-código-r-en-jamovi" class="nav-link" data-scroll-target="#ver-y-ejecutar-código-r-en-jamovi">Ver y ejecutar código R en Jamovi</a></li>
   <li><a href="#importación-y-transformación-de-datos-con-jamovi" id="toc-importación-y-transformación-de-datos-con-jamovi" class="nav-link" data-scroll-target="#importación-y-transformación-de-datos-con-jamovi">Importación y transformación de datos con Jamovi</a></li>
-  <li><a href="#exploración-de-datos-con-jamovi" id="toc-exploración-de-datos-con-jamovi" class="nav-link" data-scroll-target="#exploración-de-datos-con-jamovi">Exploración de datos con Jamovi</a></li>
+  <li><a href="#exploración-de-datos-con-jamovi" id="toc-exploración-de-datos-con-jamovi" class="nav-link" data-scroll-target="#exploración-de-datos-con-jamovi">Exploración de datos con Jamovi</a>
+  <ul class="collapse">
+  <li><a href="#análisis-exploratorio-de-una-variable" id="toc-análisis-exploratorio-de-una-variable" class="nav-link" data-scroll-target="#análisis-exploratorio-de-una-variable">Análisis exploratorio de una variable</a></li>
+  <li><a href="#análisis-exploratorio-de-varias-variables" id="toc-análisis-exploratorio-de-varias-variables" class="nav-link" data-scroll-target="#análisis-exploratorio-de-varias-variables">Análisis exploratorio de varias variables</a></li>
+  </ul></li>
   <li><a href="#análisis-de-atributos-con-jamovi" id="toc-análisis-de-atributos-con-jamovi" class="nav-link" data-scroll-target="#análisis-de-atributos-con-jamovi">Análisis de atributos con Jamovi</a></li>
   <li><a href="#regresión-con-jamovi" id="toc-regresión-con-jamovi" class="nav-link" data-scroll-target="#regresión-con-jamovi">Regresión con Jamovi</a></li>
   <li><a href="#prueba-t-y-anova-con-jamovi" id="toc-prueba-t-y-anova-con-jamovi" class="nav-link" data-scroll-target="#prueba-t-y-anova-con-jamovi">Prueba t y ANOVA con Jamovi</a></li>
@@ -246,12 +250,58 @@ Advertencia
 <li>Botón Editar: Para modificar la columna seleccionada</li>
 <li>Botón Calcular: Para añadir variables calculadas</li>
 <li>Botón Transformar: Para recodificar una variable</li>
-<li>Botón Filtros: Para filtrar por variable</li>
+<li>Botón Filtros: Para filtrar por variable. Una vez aplicado el filtro, las operaciones de análisis se realizan sobre los datos filtrados, no sobre los datos completos. Para guardar los datos filtrados, tendríamos que hacerlo en el editor de código de R, ya que no hay una opción para quedarse solo con los datos filtrados. No obstante, podemos copiar los datos filtrados y pegarlos directamente en Excel.</li>
 <li>Botones Agregar y Eliminar: Para agregar y eliminar columnas</li>
 </ul>
+<p>En el menú Datos tenemos también todas estas opciones, seleccionando las columnas en una lista y no en la tabla de datos. Además, tenemos botones para añadir y eliminar <strong>filas</strong>.</p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Tip
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Una forma de quedarnos con los datos filtrados y poder exportarlos, sería haciendo el filro opuesto y eliminar las filas filtradas.</p>
+</div>
+</div>
 </section>
 <section id="exploración-de-datos-con-jamovi" class="level2">
 <h2 class="anchored" data-anchor-id="exploración-de-datos-con-jamovi">Exploración de datos con Jamovi</h2>
+<p>La funcionalidad para análisis exploratorio que hemos visto con R la encontramos repartida en los módulos Exploración y Regresión.</p>
+<section id="análisis-exploratorio-de-una-variable" class="level3">
+<h3 class="anchored" data-anchor-id="análisis-exploratorio-de-una-variable">Análisis exploratorio de una variable</h3>
+<ul>
+<li>Exploración/Descriptivas:
+<ul>
+<li>Seleccionamos la variable que queremos explorar.</li>
+<li>Si es cualitativa, seleccionamos Tabla de Frecuencias y Gráfico de barras</li>
+<li>Si es cuantitativa, seleccionamos los estadísticos resumen a mostrar y los gráficos que queramos (histograma, gráfico de cajas, violin)</li>
+</ul></li>
+</ul>
+</section>
+<section id="análisis-exploratorio-de-varias-variables" class="level3">
+<h3 class="anchored" data-anchor-id="análisis-exploratorio-de-varias-variables">Análisis exploratorio de varias variables</h3>
+<ul>
+<li>Exploración/Descriptivas:
+<ul>
+<li>Para comparar cuantitativa según niveles de cualitativa: seleccionar la variable cuantitativa y añadir la variable cualitativa a “Separa por”</li>
+<li>Para comparar dos cualitativas, añadir una a variables y otra a “Separa por”</li>
+</ul></li>
+<li>Exploración/Dispersión:
+<ul>
+<li>Para comparar dos cuantitativas: Añade una a cada eje.</li>
+<li>Para comparar dos cuantitativas + una cualitativa, añade esta última a “Grupo”</li>
+</ul></li>
+<li>Regresión/Matriz de correlaciones:
+<ul>
+<li>Añade variables numéricas</li>
+<li>Marca la gráfica para obtener la matriz de gráficos por pares como la vista con R</li>
+</ul></li>
+</ul>
+</section>
 </section>
 <section id="análisis-de-atributos-con-jamovi" class="level2">
 <h2 class="anchored" data-anchor-id="análisis-de-atributos-con-jamovi">Análisis de atributos con Jamovi</h2>
